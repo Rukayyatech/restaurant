@@ -1,0 +1,618 @@
+:root {
+    --dark-bg: #292E36;
+    --primary-color: #E1B168;
+    --white-color: #fff8f5;
+    --tertiary-color: #343942;
+    --text-grey: #555555;
+    --light-bg: #f4f4f4;
+    --font-heading: 'Comorant Garamond ', serif;
+    --font-body: 'Josefin sans', sans-serif;
+    --block-padding: 8rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body{
+    font-family: var(--font-body);
+    color: var(--text-grey);
+}
+
+.top-bottom-border{
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+  font-weight: bold;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  padding: .5rem;
+}
+
+        /* Main Header Container */
+        .site-header {
+            background-color: var(--dark-bg);
+            color: var(--white-color);
+        }
+
+        .header-container {
+          padding: 2rem var(--block-padding);
+        }
+
+        /* Top Bar: Phone, Logo, Cart/Reservation */
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+        }
+
+        .header-contact .phone-btn {
+            border: 1px solid #555;
+            padding: 0.75rem 1.5rem;
+            color: var(--color-text-light);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        
+        .header-contact .phone-btn:hover {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            color: var(--color-dark-bg);
+        }
+
+        .header-logo {
+            text-align: center;
+            color: var(--color-accent);
+        }
+        
+        .header-logo img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .header-actions .cart-icon {
+            font-size: 1.5rem;
+            color: var(--color-text-light);
+        }
+
+        .header-actions .reservation {
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .header-actions .reservation-btn:hover {
+            background-color: #b38e69;
+        }
+        
+        /* Sub Navigation Bar */
+        .header-sub-nav {
+            border-top: 1px solid var(--text-grey);
+            border-bottom: 1px solid var(--text-grey);
+        }
+        
+        .sub-nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 2.5rem;
+        }
+
+        .main-nav a {
+            color: var(--color-text-grey);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .main-nav a:hover {
+            color: var(--color-text-light);
+        }
+
+        .sub-nav-socials {
+            display: flex;
+            gap: 1.5rem;
+            right: 0;
+        }
+        
+        .sub-nav-socials a {
+            color: var(--color-text-grey);
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+        
+        .sub-nav-socials a:hover {
+            color: var(--color-text-light);
+        }
+        
+        /* Page Title Section */
+        .page-title-section {
+             background-color: var(--color-dark-bg);
+             text-align: center;
+             padding: 4rem 2rem;
+        }
+        
+        .page-title {
+            font-family: var(--font-heading);
+            color: var(--color-text-light);
+            font-size: 3rem;
+            font-weight: 500;
+        }
+
+.chef-details-section {
+            width: 100%;
+            max-width: 1200px;
+            padding:5rem var(--block-padding) ;
+        }
+
+        .chef-details-container {
+            display: flex;
+            align-items: flex-start; /* Align items to the top */
+            gap: 4rem;
+        }
+
+        /* Left Column: Image */
+        .chef-image-column {
+            flex-basis: 40%;
+            background-color: var(--image-bg-color);
+        }
+        
+        .chef-image-column img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Right Column: Text Content */
+        .chef-info-column {
+            flex-basis: 60%;
+        }
+
+        .chef-info-column .name {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--dark-bg);
+            margin: 0 0 0.5rem 0;
+        }
+
+        .chef-info-column .title {
+            font-size: 1rem;
+            color: var(--primary-color);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+
+        .chef-info-column .description {
+            color: var(--text-grey);
+            line-height: 1.8;
+            margin-bottom: 3rem;
+            max-width: 600px;
+        }
+
+        /* Contact Info Grid */
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .info-icon {
+            background-color: var(--dark-bg);
+            color: var(--white-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .info-text .info-title {
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            color: var(--dark-bg);
+            margin: 0 0 0.25rem 0;
+        }
+
+        .info-text .info-details {
+            font-size: 0.9rem;
+            color: var(--text-grey);
+            margin: 0;
+            line-height: 1.5;
+        }
+        
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .social-icons a {
+            color: var(--dark-bg);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--primary-color);
+        }
+
+
+
+
+.reservation-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            background: url('../images/op_interior.jpg') no-repeat center center/cover;
+            position: relative;
+            margin: 5rem 0;
+        }
+
+        /* Dark overlay for the background image */
+        .reservation-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Form Container */
+        .reservation-form-container {
+            position: relative; 
+            background-color: rgba(41, 46, 54, 0.85);
+            padding: 4rem;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+        }
+
+        .reservation-form-container .subtitle {
+            font-size: 0.9rem;
+            font-weight: 500;
+            /*color: var(--text-grey);*/
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        .reservation-form-container .title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--white-color);
+            margin-block: 3rem;
+            font-weight: 500;
+        }
+
+        /* Grid for form inputs */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Default to a single column */
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .input-group {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+            position: relative;
+        }
+
+        .form-input {
+            width: 100%;
+            background-color: transparent;
+            /*border: none;*/
+            border: 1px solid var(--primary-color);
+            color: var(--white-color);
+            padding: .8rem .4rem;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            /*outline: none;*/
+            transition: border-color 0.3s;
+        }
+
+        .form-input::placeholder {
+            color: var(--white-color);
+        }
+        
+        .form-input:focus {
+            border-bottom-color: var(--primary-color);
+        }
+        
+        /* Button Styling */
+        .submit-btn {
+            background-color: var(--white-color);
+            color: var(--dark-bg);
+            border: none;
+            padding: 1rem 2.5rem;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 1rem;
+            font-family: var(--font-body);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+        }
+        
+
+
+
+ .promo-section {
+            background-color: var(--dark-bg);
+            padding: 4rem 2rem 8rem; /* Extra padding at the bottom for the video overlap */
+            text-align: center;
+        }
+        
+        /* Section Header */
+        .promo-header .subtitle {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--white-color);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .promo-header .title {
+            font-family: var(--font-heading);
+            font-size: clamp(2rem, 5vw, 3rem);
+            color: var(--white-color);
+            margin-bottom: 4rem;
+            font-weight: 500;
+        }
+
+        /* Video Container */
+        .video-container {
+            max-width: 1000px;
+            margin: -8rem auto 0; /* Negative top margin to pull it up */
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+        
+        .video-thumbnail {
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .video-thumbnail img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: rgba(255, 248, 245, 0.8);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+        
+        .play-button::before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid var(--dark-bg);
+            margin-left: 5px;
+        }
+        
+        .video-thumbnail:hover .play-button {
+            transform: translate(-50%, -50%) scale(1.1);
+            background-color: var(--white-color);
+        }
+
+
+
+ /* Main Footer Container */
+        .site-footer {
+            background-color: var(--dark-bg);
+            color: var(--white-color);
+            padding: 4rem 2rem 1.5rem;
+        }
+
+        .footer-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Top Section: Instagram, Logo, Socials */
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 3rem;
+            /*border-bottom: 1px solid var(--tertiary-color);*/
+            margin-bottom: 3rem;
+        }
+
+        .footer-top .instagram-feed a,
+        .footer-top .social-icons a {
+            color: var(--white-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .footer-top .instagram-feed a:hover,
+        .footer-top .social-icons a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-logo img {
+            max-width: 150px;
+            height: auto;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .social-icons a {
+            font-size: 1.2rem;
+        }
+
+        /* Middle Section: Contact, Subscribe, Hours */
+        .footer-middle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 3rem;
+            border-bottom: 1px solid var(--tertiary-color);
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-column h4 {
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        .footer-column p, .footer-column a {
+            margin: 0;
+            line-height: 1.8;
+            text-decoration: none;
+        }
+        
+        .footer-column a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-column .call{
+            color: var(--primary-color);
+        }
+
+        .footer-column .phone_number{
+          color: var(--white-color)
+        }
+
+        .footer-column .email{
+          color: var(--primary-color)
+        }
+        .date{
+          color: var(--primary-color)
+        }
+        .subscribe-form {
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .subscribe-form input {
+            background-color: transparent; border: none;
+            border: 1px solid var(--white-color);
+            padding: 1rem;
+            flex-grow: 1;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        .subscribe-form input:focus {
+            border-bottom-color: var(--primary-color);
+        }
+
+        .subscribe-form button {
+            background-color: var(--white-color);
+            color: var(--dark-bg);
+            border: none;
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .subscribe-form button:hover {
+            background-color: var(--primary-color);
+            color: var(--dark-bg);
+        }
+
+        /* Bottom Section: Copyright, Links */
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+        }
+        
+        .footer-bottom .legal-links a {
+            color: var(--white-color);
+            text-decoration: none;
+            margin-left: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .footer-bottom .legal-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-top {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            .footer-bottom {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+            .footer-bottom .legal-links a {
+                margin: 0 0.5rem;
+            }
+        }
