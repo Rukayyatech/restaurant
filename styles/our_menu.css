@@ -166,9 +166,12 @@ body{
 /* Main Section Container */
         .menu-section {
             width: 100%;
-            max-width: 1200px;
             padding:2rem var(--block-padding) ;
         }
+
+       .menu-2{
+           flex-direction: row-reverse;
+       } 
 
         .menu-container {
             display: flex;
